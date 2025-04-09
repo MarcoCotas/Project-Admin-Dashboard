@@ -5,16 +5,38 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 1fr 4fr;
 }
 
 .sidebar {
-  background-color: aqua;
   display: grid;
-  grid-template-rows: repeat(16, 10px);
-
+  background-color: rgb(60, 181, 246);
+  grid-template-rows: repeat(5, 1fr);
   padding: 1rem;
 }
 
-.list1 {
-  grid-row: ;
+.top-menu {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  background-color: rgb(38, 81, 105);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  background-color: rgb(105, 38, 98);
+}
+
+.projects {
+  display: grid;
+  grid-row: 1/5;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  background-color: rgb(241, 46, 32);
+}
+.project-card {
+  padding: 2rem;
+  border: 2px solid black;
 }

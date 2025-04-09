@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dashboard | Marco Cotas</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <div class="sidebar">
-        <div class="header">Dashboard</div>
-        <ul class="list1">
+      <!-- Sidebar -->
+      <nav class="sidebar">
+        <div class="logo">Dashboard</div>
+        <ul class="menu">
           <li>Home</li>
           <li>Profile</li>
           <li>Messages</li>
@@ -18,132 +19,144 @@
           <li>Tasks</li>
           <li>Communities</li>
         </ul>
-        <ul class="list1">
+        <ul class="menu secondary">
           <li>Settings</li>
           <li>Support</li>
           <li>Privacy</li>
         </ul>
-      </div>
-      <div class="top-menu">
-        <div class="search"></div>
-        <div class="profile-name"></div>
-        <p>Hi there,</p>
-        <p>Marco Cotas (@marcoCotas)</p>
-        <div class="butons">
-          <button>New</button>
-          <button>Uploud</button>
-          <button>Share</button>
-        </div>
-        <div class="main">
+      </nav>
+      <div class="body-right">
+        <!-- Top Menu -->
+        <header class="top-menu">
+          <div class="search"></div>
+          <div class="profile-name"></div>
+          <div class="user-greeting">
+            <span>Hi there,</span>
+            <h2>Marco Cotas <small>@marcoCotas</small></h2>
+          </div>
+          <div class="buttons">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
           <div class="main-top">
-            <p>Your Projects</p>
-            <p>Announcment</p>
+            <h2>Your Projects</h2>
+            <h2>Announcements</h2>
           </div>
-          <div class="main-content">
-            <item>
-              <h3>Super Cool Project</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus, amet, repudiandae expedita magni nemo iste corrupti
-                esse aut doloremque ratione molestias porro veniam odio minus
-                officiis delectus, rem dolorum voluptate?
-              </p>
-            </item>
-            <item>
-              <h3>Super Cool Project</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus, amet, repudiandae expedita magni nemo iste corrupti
-                esse aut doloremque ratione molestias porro veniam odio minus
-                officiis delectus, rem dolorum voluptate?
-              </p>
-            </item>
-            <item>
-              <h3>Super Cool Project</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus, amet, repudiandae expedita magni nemo iste corrupti
-                esse aut doloremque ratione molestias porro veniam odio minus
-                officiis delectus, rem dolorum voluptate?
-              </p>
-            </item>
-            <item>
-              <h3>Super Cool Project</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus, amet, repudiandae expedita magni nemo iste corrupti
-                esse aut doloremque ratione molestias porro veniam odio minus
-                officiis delectus, rem dolorum voluptate?
-              </p>
-            </item>
-            <item>
-              <h3>Super Cool Project</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus, amet, repudiandae expedita magni nemo iste corrupti
-                esse aut doloremque ratione molestias porro veniam odio minus
-                officiis delectus, rem dolorum voluptate?
-              </p>
-            </item>
-            <item>
-              <h3>Super Cool Project</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus, amet, repudiandae expedita magni nemo iste corrupti
-                esse aut doloremque ratione molestias porro veniam odio minus
-                officiis delectus, rem dolorum voluptate?
-              </p>
-            </item>
-            <item>
-              <h3>Super Cool Project</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus, amet, repudiandae expedita magni nemo iste corrupti
-                esse aut doloremque ratione molestias porro veniam odio minus
-                officiis delectus, rem dolorum voluptate?
-              </p>
-            </item>
-            <div class="main-right">
-              <div class="first-box">
-                <div class="box-1"></div>
-                <p>Announcments</p>
-                <h3>Site Maintanence</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Doloribus, amet, repudiandae expedita magni nemo iste corrupti
-                  esse aut doloremque ratione molestias porro veniam odio minus
-                  officiis delectus, rem dolorum voluptate?
-                </p>
-                <div class="box-2"></div>
 
-                <h3>Site Maintanence</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Doloribus, amet, repudiandae expedita magni nemo iste corrupti
-                  esse aut doloremque ratione molestias porro veniam odio minus
-                  officiis delectus, rem dolorum voluptate?
-                </p>
-                <div class="box-3"></div>
+          <section class="projects">
+            <article class="project-card">
+              <h3>Super Cool Project</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="actions">
+                <button>💬</button>
+                <button>⭐</button>
+                <button>⤴</button>
+              </div>
+            </article>
 
-                <h3>Site Maintanence</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Doloribus, amet, repudiandae expedita magni nemo iste corrupti
-                  esse aut doloremque ratione molestias porro veniam odio minus
-                  officiis delectus, rem dolorum voluptate?
-                </p>
+            <article class="project-card">
+              <h3>Less Cool Project</h3>
+              <p>
+                Phasellus imperdiet nulla et sapien malesuada, ut malesuada
+                sapien pretium.
+              </p>
+              <div class="actions">
+                <button>💬</button>
+                <button>⭐</button>
+                <button>⤴</button>
               </div>
-              <div class="second-box">
-                <p>@Marco Cotas</p>
-                <p>This is my profile</p>
-                <p>@Marco Cotas</p>
-                <p>This is my profile</p>
-                <p>@Marco Cotas</p>
-                <p>This is my profile</p>
+            </article>
+
+            <article class="project-card">
+              <h3>Impossible App</h3>
+              <p>
+                Curabitur a felis in nunc fringilla tristique non vitae nulla.
+              </p>
+              <div class="actions">
+                <button>💬</button>
+                <button>⭐</button>
+                <button>⤴</button>
               </div>
+            </article>
+
+            <article class="project-card">
+              <h3>Easy Peasy App</h3>
+              <p>Maecenas tempus tellus eget condimentum rhoncus.</p>
+              <div class="actions">
+                <button>💬</button>
+                <button>⭐</button>
+                <button>⤴</button>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <h3>Ad Blocker</h3>
+              <p>
+                Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+              </p>
+              <div class="actions">
+                <button>💬</button>
+                <button>⭐</button>
+                <button>⤴</button>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <h3>Money Maker</h3>
+              <p>
+                Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor
+                eu, consequat vitae.
+              </p>
+              <div class="actions">
+                <button>💬</button>
+                <button>⭐</button>
+                <button>⤴</button>
+              </div>
+            </article>
+          </section>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="sidebar-right">
+          <section class="announcements">
+            <h3>Announcements</h3>
+            <div class="announcement">
+              <h4>Site Maintenance</h4>
+              <p>
+                Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                sem.
+              </p>
             </div>
-          </div>
-        </div>
+            <div class="announcement">
+              <h4>Community Share Day</h4>
+              <p>
+                Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+              </p>
+            </div>
+            <div class="announcement">
+              <h4>Updated Privacy Policy</h4>
+              <p>
+                Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
+                nisi.
+              </p>
+            </div>
+          </section>
+
+          <section class="trending">
+            <h3>Trending</h3>
+            <ul>
+              <li>@tegan — World Peace Builder</li>
+              <li>@morgan — Super Cool Project</li>
+              <li>@kendall — Life Changing App</li>
+              <li>@alex — No Traffic Maker</li>
+            </ul>
+          </section>
+        </aside>
       </div>
     </div>
   </body>
